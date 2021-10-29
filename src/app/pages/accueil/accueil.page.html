@@ -1,0 +1,17 @@
+<ion-header>
+  
+  <ion-toolbar color="primary">
+    <ion-title>Accueil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1> Bienvenue {{nom}}  {{prenom}}  </h1>
+<ion-item>
+  <h2> <strong>Email:</strong> {{email}}</h2>
+</ion-item>
+<ion-button routerLink="/liste"  color="success">Liste des Utilisateurs</ion-button>
+  <ion-button routerLink="/profile"  color="warning">Profiles</ion-button>
+  <ion-button routerLink="/recherche"  color="danger">Recherche</ion-button>
+  <ion-button  (click)= "logout()">Déconnexion</ion-button>
+</ion-content>

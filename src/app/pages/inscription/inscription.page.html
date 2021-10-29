@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="validate" (ngSubmit)="tryRegister(validate.value)"> 
+
+  <ion-item>
+    <ion-input color="primary" formControlName="prenom" type="text" ngModel required>Prénom:</ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input color="primary" formControlName="nom"  type="text" ngModel required>Nom:</ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input color="primary" formControlName="telephone" type="text" ngModel required>Téléphone:</ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input color="primary" formControlName="email" type="email" ngModel required>Email:</ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input color="primary" formControlName="password" type="password" ngModel required>Password:</ion-input>
+  </ion-item>
+  <ion-button   type="submit"  color="success" >Connexion</ion-button>
+  
+</form>
+</ion-content>

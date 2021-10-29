@@ -1,0 +1,21 @@
+<ion-header >
+  <ion-toolbar color="secondary">
+    <ion-title >Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="corps">
+ <div >
+  <form #f="ngForm" (ngSubmit)="direction(f.value)">
+    <ion-item>
+    <ion-input name="email" position="floating"  required ngModel>Email:</ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" name="password" position="floating"  required ngModel>Password:</ion-input>
+  </ion-item>
+  <ion-button type="submit" color="success" >Connexion</ion-button>
+  <ion-button routerLink="/inscription" color="success">S'inscrire</ion-button>
+<ion-button routerLink="/passwordoublie"  color="warning">Mot de Passe Oublié</ion-button>
+</form>
+ </div>
+</ion-content>

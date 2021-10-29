@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Recherche</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="test"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label *ngFor="let user of alllist | filter:test" >
+      <h1>{{user.prenom}}</h1>
+      <h1>{{user.nom}}</h1>
+      <h1>{{user.email}}</h1>
+    </ion-label>
+  </ion-item>
+  <ion-button expand="block" routerLink="/accueil">Retour</ion-button>
+</ion-content>

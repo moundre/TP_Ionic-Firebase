@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Liste des Utilisateurs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item>
+  <ion-label *ngFor="let user of tlist" >
+    <img src="" >
+    <h1>Prénom: {{user.prenom}}</h1>
+    <h1>Nom:  {{user.nom}}</h1>
+    <h1>Email: {{user.email}}</h1>
+  </ion-label>
+</ion-item>
+<ion-button expand="block" routerLink="/accueil">Retour</ion-button>
+</ion-content>
